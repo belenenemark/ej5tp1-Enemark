@@ -1,6 +1,6 @@
 public class main {
 
-	public static void principal(String[] args) {
+	public static void main(String[] args) {
     System.out.println("Lista Ordenada:  ");
 		int valor;
 		valor =2;
