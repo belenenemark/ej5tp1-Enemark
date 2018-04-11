@@ -45,9 +45,24 @@ public class main {
 		listTwo.print();
      System.out.println("fin lista 2  ");
 		lista resultTwo = new lista();
-		comparador(list1, list2, resultTwo);
+		comparador(listOne, listTwo, result);
 		result.print();
      System.out.println("fin result  ");
+		//con carga de randoms
+		lista l1 = new lista();
+		lista l2 = new lista();
+		lista result3 =new lista();
+		CargarListaconElem(l1, 100);
+		System.out.println("--");
+		l1.print();
+		System.out.println("--");
+		l2.print();
+		System.out.println("--");
+		CargarListaconElem(l2, 100);
+		comparador(l1,l2,result3);
+		result3.print();
+			
+		
 		
 		
 		
@@ -103,5 +118,13 @@ Node cursor1 = list1.getFirst();
 			}
 		}
 	}
+	public static void CargarListaconElem(myList list, int cantElem){
+	int contad=0;
+	while(contad<cantElem){
+		int valor = (int) (Math.random() * 20) + 1;
+		list.insert(valor);
+		contad++;
+	}
+}
 	}
 	
